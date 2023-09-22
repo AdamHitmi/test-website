@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Website-1.css">
+    <title>Blog Page</title>
+</head>
+<body>
+   <!------header------->
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="logos/logo.png" ></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Contact Us</h1>
+</section>
+
+<!------Contact Us------>
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4715.674734035333!2d-7.633385816439813!3d33.606659450415464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2607994d58f%3A0x67a1d618e7b0d072!2sMosqu%C3%A9e%20Hassan-II!5e0!3m2!1sfr!2sma!4v1695307666246!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<section class="contact-us">
+    <div class="row">
+<div class="contact-col">
+          <div> 
+            <i class="fa-solid fa-house"></i>
+            <span>
+                <h5>Mosquee Hassan-II</h5>
+                <p>Maroc, casablanca</p>
+            </span>
+        </div> 
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+                <h5>+212 649898456</h5>
+                <p>Monday to Friday, 8AM to 10PM</p>
+            </span>
+        </div> 
+        <div> 
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+                <h5>hitmiadam96@gmail.com</h5>
+                <p>Email us for your query.</p>
+            </span>
+        </div> 
+</div>   
+<div class="contact-col">
+       <form action="form-handler.php" method="post">
+        <input type="text" name="name" placeholder="Enter your Name" required>
+        <input type="email" name="email" placeholder="Enter Email Address" required>
+        <input type="text" name="subject" placeholder="Enter your Subject" required>
+         <textarea rows="8"  name="message" placeholder="Message"></textarea>
+         <button type="submit" class="hero-btn red-btn">Message</button>
+       </form>
+</div>
+</div>
+</section>
+      <!------Footer ------>
+     <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repudiandae provident ipsam <br> 
+            voluptatem,nemo quo nesciunt soluta molestiae repellat nisi qui.</p>
+
+           <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+           </div> 
+           <p>Made with <i class="fa-regular fa-heart"></i> by Adam Hitmi</p>
+     </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-300px";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c01908d34c.js" crossorigin="anonymous"></script>
+</body>
+</html> 

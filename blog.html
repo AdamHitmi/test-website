@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Website-1.css">
+    <title>Blog Page</title>
+</head>
+<body>
+   <!------header------->
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="logos/logo.png" ></a>
+           <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs For 2023</h1>
+</section>
+
+<!------Blog------>
+
+<section class="blog-content">
+   <div class="row">
+    <div class="blog-left">
+        <img src="backgrounds/certificate.jpg">
+        <h2>Our Certificates & Online Programs For 2023</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam iure,
+             voluptatum minus error vero porro odit quaerat quo odio? Delectus maiores amet consectetur vero?</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores qui alias vitae mollitia necessitatibus ullam, suscipit nesciunt recusandae debitis culpa officiis, placeat ipsum et hic numquam quisquam sunt excepturi iste nemo illo provident animi magni modi doloremque. Totam, facilis! Minima laudantium voluptatem praesentium vitae tempora, deleniti repellendus nulla suscipit culpa ullam neque sapiente consequuntur. Tempore animi eligendi repellendus architecto culpa non corporis et eos cum.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, molestias ab commodi ipsa, repudiandae aut suscipit, eius ipsam odit mollitia reprehenderit inventore ut asperiores tempore a saepe voluptates perspiciatis sunt obcaecati quibusdam modi. Sit ipsa et laborum, odit repellendus a.</p>
+        <br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis fugit esse praesentium, saepe in consequuntur alias possimus laboriosam animi! Dolore, commodi modi cum laboriosam quibusdam, quos odio nihil sed, unde voluptatem alias laudantium et.</p>
+    
+    <div class="comment-box">
+        <h3>Leave a Comment</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Enter Name" required>
+            <input type="Email" placeholder="Enter Email" required>
+            <textarea rows="5" placeholder="Enter Your Comment" required></textarea>
+            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+        </form>
+    </div>    
+    </div>
+    <div class="blog-right">
+        <h3>Post Categories</h3>
+     <div><span>Buisness Analytics</span>
+         <span>21</span>
+    </div>
+    <div><span>Data Science</span>
+         <span>28</span>
+    </div>
+    <div><span>Machine Learning</span>
+         <span>15</span>
+    </div>
+    <div><span>Computer Science</span>
+         <span>34</span>
+    </div>
+    <div><span>AutoCAD</span>
+         <span>42</span>
+    </div>
+    <div><span>Journalism</span>
+         <span>22</span>
+    </div>
+    <div><span>Commerce</span>
+         <span>30</span>
+    </div>
+
+   </div>
+</section>
+      <!------Footer ------>
+     <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.Repudiandae provident ipsam <br> 
+            voluptatem,nemo quo nesciunt soluta molestiae repellat nisi qui.</p>
+
+           <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+           </div> 
+           <p>Made with <i class="fa-regular fa-heart"></i> by Adam Hitmi</p>
+     </section>
+
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0px";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-300px";
+        }
+    </script>
+    <script src="https://kit.fontawesome.com/c01908d34c.js" crossorigin="anonymous"></script>
+</body>
+</html> 
